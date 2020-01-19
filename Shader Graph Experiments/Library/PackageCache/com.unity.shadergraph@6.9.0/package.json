@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "com.unity.render-pipelines.core": "6.9.0"
+    }, 
+    "description": "The Shader Graph package adds support for a visual shader editing tool into Unity. This tool can be used by artists to create shaders in a visual way instead of having to require code editing. Specific render pipelines can implement specific graph features. Currently the Shader Graph is supported on the High Definition Rendering Pipeline and the Lightweight Rendering Pipeline.", 
+    "displayName": "Shader Graph", 
+    "name": "com.unity.shadergraph", 
+    "repoPackagePath": "com.unity.shadergraph", 
+    "repository": {
+        "revision": "a0539b6e84abf8cedea2d4372f495135a6c5cba8", 
+        "type": "git", 
+        "url": "ssh://git@github.com/Unity-Technologies/ScriptableRenderLoop.git"
+    }, 
+    "unity": "2019.2", 
+    "unityRelease": "0b9", 
+    "version": "6.9.0"
+}
