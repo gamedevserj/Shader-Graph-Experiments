@@ -41,5 +41,7 @@ Shadow needs to have another material that cuts out the model allowing for light
 
 Based on [this shader](https://www.reddit.com/r/Unity2D/comments/fcxjbu/i_always_wanted_to_create_water_reflection_shader/).
 
-The difference is that this shader allows for some degree of vertical movement for the camera. Changing camera's orthographic size affects the shader and requires adjusting the multiplier property.
+The difference is that this shader allows for some degree of vertical movement for the camera. Changing camera's orthographic size affects the shader and requires adjusting the multiplier property. 
+
+One major issue with this shader is that water can't be above/below some level from the 0 on Y-axis, and it can't take up more than half of the screen.
 
