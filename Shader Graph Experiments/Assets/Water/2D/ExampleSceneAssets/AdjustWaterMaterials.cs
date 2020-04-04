@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdjustMaterials : MonoBehaviour
+public class AdjustWaterMaterials : MonoBehaviour
 {
 
     public Camera cam;
