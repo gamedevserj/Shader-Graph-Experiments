@@ -50,9 +50,7 @@ A simple grass swaying shaders. The one that uses gradient causes some image dis
 
 ## Mirror effect
 #### Uses \_CameraOpaqueTexture
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-left.png" height="256">
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-center.png" height="256">
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-right.png" height="256">
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-left.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-center.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-right.png" height="256">
 
 Mirror reflection effect. Reflection is based on the object's pivot point. in the examples above pivot points are as follows - left, center, right.
 Just like the water shader example scene uses script that adjusts material properties to reflect objects properly. If you have only one mirror in the scene you can replace _ObjectPositionX property with Object node and take X position from it.
