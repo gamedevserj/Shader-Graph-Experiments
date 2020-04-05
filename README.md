@@ -54,3 +54,7 @@ A simple grass swaying shaders. The one that uses gradient causes some image dis
 
 Mirror reflection effect. Reflection is based on the object's pivot point. in the examples above pivot points are as follows - left, center, right.
 Just like the water shader example scene uses script that adjusts material properties to reflect objects properly. If you have only one mirror in the scene you can replace _ObjectPositionX property with Object node and take X position from it.
+
+## Resizeable shape
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/ResizeableShape.png" height="256">
+Shader that allows creation of a shape that preserves its width when changing size.
