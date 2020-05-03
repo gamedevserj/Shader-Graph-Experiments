@@ -43,6 +43,10 @@ Based on [this shader](https://www.reddit.com/r/Unity2D/comments/fcxjbu/i_always
 
 The difference is that this shader allows for vertical movement for the camera. The shader comes with the script example where materials adjust their properties to show the effect correctly. You may move the code from Update method to Start, if your water objects don't change their Y position and if Camera's orthographic size stays the same.
 
+Here's how offset is calculated:
+
+yOffset = cameraPositionY * (-1/cameraOrthographicSize) + objectPositionY * (1/cameraOrthographicSize)
+
 ## Grass sway
 <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/GrassSway2D.png" height="256">
 
@@ -55,6 +59,27 @@ A simple grass swaying shaders. The one that uses gradient causes some image dis
 Mirror reflection effect. Reflection is based on the object's pivot point. in the examples above pivot points are as follows - left, center, right.
 Just like the water shader example scene uses script that adjusts material properties to reflect objects properly. If you have only one mirror in the scene you can replace _ObjectPositionX property with Object node and take X position from it.
 
+Here's how offset is calculated:
+
+xOffset = screenHeight/screenWidth/cameraOrthographicSize * cameraPositionX * (-1) + screenHeight/screenWidth/cameraOrthographicSize * objectPositionX
+
+
 ## Resizeable shape
 <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/ResizeableShape.png" height="256">
 Shader that allows creation of a shape that preserves its width when changing size.
+
+## Magnifying glass effect
+#### Uses \_CameraOpaqueTexture
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/MagnifyingGlass.png" height="256">
+
+The effect is implemented by modifying the tiling and offset values of the object. The script attached to the magnifying glass object adjusts values taking into account object position, camera position, camera orthographic size, and screen aspect ratio. 
+
+Here's how offset is calculated:
+
+xOffset = magnification * 0.5f + (halfZoom / cameraOrthographicSize) / screenAspect * objectPositionX - (halfZoom / cameraOrthographicSize) / screenAspect * cameraPositionX
+
+yOffset = magnification * 0.5f + (halfZoom / cameraOrthographicSize) * objectPositionY - (halfZoom / cameraOrthographicSize) * cameraPositionY
+
+The tiling is calculated by subtracting magnification amount from 1:
+
+xTiling = yTiling = 1 - magnification;

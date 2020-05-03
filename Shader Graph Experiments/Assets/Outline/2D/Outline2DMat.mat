@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Circle
-  m_Shader: {fileID: -6465566751694194690, guid: 14edf97394acf8a468216f2390597939,
+  m_Name: Outline2DMat
+  m_Shader: {fileID: -6465566751694194690, guid: 6c2cf873003ff26418eb59f0ef823b08,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -21,15 +21,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c4d7d6470acd7bf45971042161c6e018, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_157241EB: 2.25
-    - Vector1_A98938BF: 1
-    - Vector1_B21C6E40: 0.47
-    - Vector1_B38D6270: 1
-    - Vector1_B9D1C607: 0.5
-    - _Size: 1.41
+    - _OutlineThickness: 0.69
     m_Colors:
-    - Color_A8224D81: {r: 1, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0.023376942, b: 1, a: 1}

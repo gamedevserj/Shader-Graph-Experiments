@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water2D
-  m_Shader: {fileID: -6465566751694194690, guid: f5c4a860bc1f3624db883502f7f8a06f,
+  m_Name: Mirror2DMat
+  m_Shader: {fileID: -6465566751694194690, guid: 9339c45dd738b704cbce41a9cb1164ef,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -25,11 +25,17 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _CamOrthoSize: 4
     - _CameraOrthoSize: 4
     - _DistortionSpeed: 0.1
-    - _Multiplier: -0.285
+    - _Multiplier: -0.27
+    - _ObjPosX: 0
+    - _ObjectPositionX: 0
     - _ObjectPositionY: 0
+    - _OffsetY: 0
     m_Colors:
-    - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
+    - Vector2_6AB8E268: {r: 0, g: 0, b: 0, a: 0}
+    - _DIstortionTile: {r: 10, g: 10, b: 0, a: 0}
+    - _Offset: {r: 0, g: 1.07, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _Tint: {r: 0.07058824, g: 0.8078431, b: 1, a: 1}
+    - _Tint: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}

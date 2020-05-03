@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CustomShape
+  m_Name: CustomShapeMat
   m_Shader: {fileID: -6465566751694194690, guid: 7e305cb66528c454a9d6914eed3ec263,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA

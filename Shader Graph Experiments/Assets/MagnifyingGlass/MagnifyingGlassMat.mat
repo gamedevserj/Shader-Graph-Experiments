@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mirror2D
-  m_Shader: {fileID: -6465566751694194690, guid: 9339c45dd738b704cbce41a9cb1164ef,
+  m_Name: MagnifyingGlassMat
+  m_Shader: {fileID: -6465566751694194690, guid: 09434c26a967af1478c3cbfe318365bd,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -20,22 +20,27 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_9D84DE58:
+        m_Texture: {fileID: 2800000, guid: 205c1ba07e416c94eb55e0ef63279bdc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: c4d7d6470acd7bf45971042161c6e018, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _CamOrthoSize: 4
+    - Vector1_5D2EFD4B: 0
+    - Vector1_94D77747: 0.1
     - _CameraOrthoSize: 4
     - _DistortionSpeed: 0.1
-    - _Multiplier: -0.27
-    - _ObjPosX: 0
-    - _ObjectPositionX: 0
+    - _Multiplier: -0.285
     - _ObjectPositionY: 0
-    - _OffsetY: 0
+    - _OffsetX: 0.032
+    - _OffsetY: 0.05
+    - _Zoom: 0.1
     m_Colors:
-    - Vector2_6AB8E268: {r: 0, g: 0, b: 0, a: 0}
-    - _DIstortionTile: {r: 10, g: 10, b: 0, a: 0}
-    - _Offset: {r: 0, g: 1.07, b: 0, a: 0}
-    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _Tint: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+    - Vector2_58DCD92E: {r: 0.9, g: 0.9, b: 0, a: 0}
+    - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
+    - _Offset: {r: 0.05, g: 0.05, b: 0, a: 0}
+    - _Tiling: {r: 0.9, g: 0.9, b: 0, a: 0}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}

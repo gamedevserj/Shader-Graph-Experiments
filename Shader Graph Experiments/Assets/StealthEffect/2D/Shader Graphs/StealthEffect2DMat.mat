@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StealthEffect2D
+  m_Name: StealthEffect2DMat
   m_Shader: {fileID: -6465566751694194690, guid: 02128b4f136550849910ef797a5b44b8,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
