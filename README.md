@@ -1,7 +1,7 @@
 # Shader-Graph-Experiments
 
-Created with Unity 2019.2.2f1
-Shader Graph v6.9.1
+Created with Unity 2019.3.0f6
+Shader Graph v7.1.8
 
 The project contains various Shader Graph effects
 
