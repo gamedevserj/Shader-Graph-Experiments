@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MagnifyingGlassMat
-  m_Shader: {fileID: -6465566751694194690, guid: 09434c26a967af1478c3cbfe318365bd,
+  m_Name: ImpactEffect3DMat
+  m_Shader: {fileID: -6465566751694194690, guid: 88b021d7d374e0d45a61faf9224fa1c7,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -24,18 +24,40 @@ Material:
         m_Texture: {fileID: 2800000, guid: 205c1ba07e416c94eb55e0ef63279bdc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_BC1B8C6F:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: c4d7d6470acd7bf45971042161c6e018, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_18AEADA3_Out_0:
+    - _SampleTexture2D_5BEFF010_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 9b8c7b166e5639c49a477f1b62e90e1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_70F59757_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 49444b90217e08444945ff8bc3b5a1fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_76444C9A_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 9b8c7b166e5639c49a477f1b62e90e1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_6D3343F6_Out_0:
         m_Texture: {fileID: 2800000, guid: d9dbf25506a9349499cc3b4a8481bdc8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_2169C92E: 0.8
+    - Vector1_46AE59CD: 0.9
+    - Vector1_5016B55D: 1
     - Vector1_5D2EFD4B: 0
-    - Vector1_7B1AB4A7: -0.01
+    - Vector1_69DCFDC2: 30.1
+    - Vector1_86BAB8C1: -0.21
     - Vector1_94D77747: 0.1
+    - Vector1_D4C279A1: 1
+    - Vector1_F16D9847: 10
     - _CameraOrthoSize: 4
     - _DistortionSpeed: 0.1
     - _Multiplier: -0.285
@@ -44,8 +66,12 @@ Material:
     - _OffsetY: 0.05
     - _Zoom: 0.1
     m_Colors:
+    - Color_ED80D42F: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - Vector2_58DCD92E: {r: 0.9, g: 0.9, b: 0, a: 0}
+    - Vector2_71C82B60: {r: 0.25, g: 0.25, b: 0, a: 0}
+    - Vector2_82675232: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - Vector2_D07AD63D: {r: 1, g: 1, b: 0, a: 0}
     - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
-    - _Offset: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _Tiling: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Offset: {r: 0.05, g: 0.05, b: 0, a: 0}
+    - _Tiling: {r: 0.9, g: 0.9, b: 0, a: 0}
     - _Tint: {r: 1, g: 1, b: 1, a: 1}

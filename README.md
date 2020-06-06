@@ -83,3 +83,12 @@ yOffset = magnification * 0.5f + (halfZoom / cameraOrthographicSize) * objectPos
 The tiling is calculated by subtracting magnification amount from 1:
 
 xTiling = yTiling = 1 - magnification;
+
+Distortion strength around edges can be changed.
+
+## Impact effect
+### 2D and 3D
+#### Uses \_CameraOpaqueTexture
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/ImpactEffect2D.png" height="256">
+
+Effect simulates shock wave that can be seen during explosions. The effect is basically radial distortion from the center of the object. Changing the alpha can be used to create a double vision that looks similar to the flashbang effect.
