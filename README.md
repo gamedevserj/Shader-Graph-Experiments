@@ -1,7 +1,7 @@
 # Shader-Graph-Experiments
 
-Created with Unity 2019.3.0f6  
-Shader Graph v7.1.8
+Created with Unity 2019.3.13.f1  
+Shader Graph v7.3.1
 
 The project contains various Shader Graph effects
 
@@ -45,7 +45,19 @@ The difference is that this shader allows for vertical movement for the camera. 
 
 Here's how offset is calculated:
 
-yOffset = cameraPositionY * (-1/cameraOrthographicSize) + objectPositionY * (1/cameraOrthographicSize)
+Offset.Y = CameraPosition.Y * (-1/cameraOrthographicSize) + ObjectPosition.Y * (1/cameraOrthographicSize)
+
+## Water reflection with objects off the screen
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Water2D-full-reflection.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Water2D-full-reflection2.png" height="256">
+
+Shader that uses \_CameraOpaqueTexture doesn't allow for the water to take up more than half of the screen starting from the bottom or if its height of the portion on the screen is greater than its distance to the top of the screen. This variation allows for it to render objects that are outside of the screen. The render camera has to have orthographic size twice time greater than the camera that renders the scene. The camera that renders to texture covers twice as much space, so in order for reflections to be crispy as the original the render texture must be 2x the resolutions. This can get quite expensive on higher resolutions, so if you're using this make sure to allow player choose the quality of reflections.
+
+Since second camera covers larger portion of the screen it requires a different calculation of tiling and offset.
+
+Tiling.Y = MainCameraOrthographicSize/SecondaryCameraOrthographicSize
+Tiling.X = Tiling.Y * ScreenWidth/ScreenHeight
+Offset.Y = (ObjectPosition.Y - MainCameraPosition.Y)/SecondaryCameraOrthographicSize
+Offset.X = (1 - Tiling.X)/2
 
 ## Grass sway
 <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/GrassSway2D.png" height="256">
@@ -61,7 +73,7 @@ Just like the water shader example scene uses script that adjusts material prope
 
 Here's how offset is calculated:
 
-xOffset = screenHeight/screenWidth/cameraOrthographicSize * cameraPositionX * (-1) + screenHeight/screenWidth/cameraOrthographicSize * objectPositionX
+Offset.X = ScreenHeight/ScreenWidth/CameraOrthographicSize * CameraPosition.X * (-1) + ScreenHeight/ScreenWidth/CameraOrthographicSize * ObjectPosition.X
 
 
 ## Resizeable shape
@@ -76,13 +88,13 @@ The effect is implemented by modifying the tiling and offset values of the objec
 
 Here's how offset is calculated:
 
-xOffset = magnification * 0.5f + (halfZoom / cameraOrthographicSize) / screenAspect * objectPositionX - (halfZoom / cameraOrthographicSize) / screenAspect * cameraPositionX
+Offset.X = magnification * 0.5f + (halfZoom / cameraOrthographicSize) / screenAspect * ObjectPosition.X - (halfZoom / cameraOrthographicSize) / screenAspect * CameraPosition.X
 
-yOffset = magnification * 0.5f + (halfZoom / cameraOrthographicSize) * objectPositionY - (halfZoom / cameraOrthographicSize) * cameraPositionY
+Offset.Y = magnification * 0.5f + (halfZoom / cameraOrthographicSize) * ObjectPosition.Y - (halfZoom / cameraOrthographicSize) * CameraPosition.Y
 
 The tiling is calculated by subtracting magnification amount from 1:
 
-xTiling = yTiling = 1 - magnification;
+Tiling.X = Tiling.Y = 1 - magnification;
 
 Distortion strength around edges can be changed.
 

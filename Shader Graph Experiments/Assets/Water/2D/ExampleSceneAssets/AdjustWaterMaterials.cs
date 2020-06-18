@@ -6,7 +6,9 @@ public class AdjustWaterMaterials : MonoBehaviour
 {
 
     public Camera cam;
+    public Camera camRT;
     public Renderer[] waterRenderers;
+	public bool usesRenderTexture;
 
     Transform[] transforms;
     // Start is called before the first frame update
@@ -25,7 +27,10 @@ public class AdjustWaterMaterials : MonoBehaviour
         for (int i = 0; i < waterRenderers.Length; i++)
         {
             waterRenderers[i].material.SetFloat("_ObjectPositionY", transforms[i].position.y);
-            waterRenderers[i].material.SetFloat("_CameraOrthoSize", cam.orthographicSize);
+            waterRenderers[i].material.SetFloat("_MainCameraOrthoSize", cam.orthographicSize);
+            if(usesRenderTexture)
+				waterRenderers[i].material.SetFloat("_RTCameraOrthoSize", camRT.orthographicSize);
+            //waterRenderers[i].material.SetFloat("_CameraPositionY", cam.transform.position.y);
         }
     }
 }
