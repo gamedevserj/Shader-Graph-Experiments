@@ -25,10 +25,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_1C068E26: 1
+    - Vector1_88E69E89: 2.5
     - Vector1_8DCE2283: 1
+    - Vector1_D01DDB66: 1.5
     - Vector1_DD781097: 25
+    - Vector1_EB0F36: 15
+    - Vector1_F9710B30: 0.01
     - _CameraOrthoSize: 4
     - _DistortionSpeed: 0.2
+    - _MainCameraOrthoSize: 4
     - _Multiplier: -0.285
     - _ObjectPositionY: 0
     m_Colors:
