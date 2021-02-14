@@ -43,3 +43,7 @@ Based on [this shader](https://www.reddit.com/r/Unity2D/comments/fcxjbu/i_always
 
 The difference is that this shader allows for vertical movement for the camera. The shader comes with the script example where materials adjust their properties to show the effect correctly. You may move the code from Update method to Start, if your water objects don't change their Y position and if Camera's orthographic size stays the same.
 
+## Grass sway
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/GrassSway2D.png" height="256">
+
+A simple grass swaying shaders. The one that uses gradient causes some image distortion that can become very noticeable when amplitude it too high.
