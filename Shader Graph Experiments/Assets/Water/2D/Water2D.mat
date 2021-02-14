@@ -30,6 +30,6 @@ Material:
     - _Multiplier: -0.285
     - _ObjectPositionY: 0
     m_Colors:
-    - _DIstortionTile: {r: 10, g: 10, b: 0, a: 0}
+    - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _Tint: {r: 0.07058824, g: 0.8078431, b: 1, a: 1}
