@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StealthEffect3DShadows
+  m_Shader: {fileID: -6465566751694194690, guid: 3e298b6bd075f0c418594c3749ef6e38,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_52A7706C:
+        m_Texture: {fileID: 2800000, guid: 21655350bcc9f0e47bcbb157a338f894, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_56F7B15D:
+        m_Texture: {fileID: 2800000, guid: 206adb28e14acb0479ae315df5e1d743, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_5BE239A1: 85.27
+    - Vector1_5CFAA014: 0.05
+    - Vector1_91133BA6: 0.05
+    - Vector1_F79A8D4D: 0.305
+    - _DissolveAmount: 0
+    - _LerpAmount: 1
+    m_Colors:
+    - Color_C225C5C0: {r: 0, g: 0.1634613, b: 0.5943396, a: 1}
+    - Vector2_79582C83: {r: 1, g: 1, b: 0, a: 0}
