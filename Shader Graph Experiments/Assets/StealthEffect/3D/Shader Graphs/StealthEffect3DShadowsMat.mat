@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StealthEffect3D
-  m_Shader: {fileID: -6465566751694194690, guid: ded4379af3f574b45adde4d61a959720,
+  m_Name: StealthEffect3DShadowsMat
+  m_Shader: {fileID: -6465566751694194690, guid: 3e298b6bd075f0c418594c3749ef6e38,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 5000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -34,7 +34,6 @@ Material:
     - Vector1_91133BA6: 0.05
     - Vector1_F79A8D4D: 0.305
     - _DissolveAmount: 0
-    - _DistortionAmount: 0
     - _LerpAmount: 1
     m_Colors:
     - Color_C225C5C0: {r: 0, g: 0.1634613, b: 0.5943396, a: 1}
