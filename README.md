@@ -5,15 +5,19 @@ Shader Graph v6.9.1
 
 The project contains various Shader Graph effects
 
-### Texture dissolve 2D
+## Texture dissolve 2D
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Dissolve2D.png" height="256">
 
 Dissolves texture using alpha clip
 
-### Sprite outline
+## Sprite outline
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Outline2D.png" height="256">
 
 Offsets sprite image in 4 directions to create outline
 
-### Stealth cloak effect
+## Stealth cloak effect
+### 2D and 3D
+<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/StealthCloak2D-WithOutline.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/StealthCloak3D.png" height="256">
 
 Uses \_CameraOpaqueTexture to imitate invisibility cloak effect
 It has a couple of caveats attached to it. 
