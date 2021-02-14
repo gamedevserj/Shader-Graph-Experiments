@@ -28,14 +28,26 @@ Material:
         m_Texture: {fileID: 2800000, guid: 206adb28e14acb0479ae315df5e1d743, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DiffuseTex:
+        m_Texture: {fileID: 2800000, guid: 206adb28e14acb0479ae315df5e1d743, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_5BE239A1: 85.27
+    - DistortionSpeed: 7
+    - Vector1_5BE239A1: 50
     - Vector1_5CFAA014: 0.05
     - Vector1_91133BA6: 0.05
+    - Vector1_D0E1D573: 114.75
     - Vector1_F79A8D4D: 0.305
-    - _DissolveAmount: 0
+    - _DissolveAmount: 1
     - _DistortionAmount: 0
+    - _EdgeSize: 0.05
     - _LerpAmount: 1
+    - _NoiseAmount: 50
     m_Colors:
-    - Color_C225C5C0: {r: 0, g: 0.1634613, b: 0.5943396, a: 1}
-    - Vector2_79582C83: {r: 1, g: 1, b: 0, a: 0}
+    - Color_A996D8F5: {r: 0, g: 0.040288553, b: 0.31132078, a: 1}
+    - Color_C225C5C0: {r: 0, g: 0.27346945, b: 1, a: 1}
+    - Vector2_79582C83: {r: 500, g: 500, b: 0, a: 0}
+    - _DistortionTiling: {r: 50, g: 50, b: 0, a: 0}
+    - _EdgeColor: {r: 0, g: 0.1634613, b: 0.5943396, a: 1}
+    - _InvisibilityTint: {r: 0, g: 0.02807989, b: 0.21698102, a: 1}

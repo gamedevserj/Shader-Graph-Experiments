@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water2DMat
-  m_Shader: {fileID: -6465566751694194690, guid: f5c4a860bc1f3624db883502f7f8a06f,
+  m_Shader: {fileID: -6465566751694194690, guid: cc43e840bc5b27b4788bf7e85b09ee9f,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -27,18 +27,28 @@ Material:
     m_Floats:
     - Vector1_1C068E26: 1
     - Vector1_88E69E89: 2.5
-    - Vector1_8DCE2283: 1
+    - Vector1_8DCE2283: 0.2
     - Vector1_D01DDB66: 1.5
-    - Vector1_DD781097: 25
+    - Vector1_DD781097: 27.62
     - Vector1_EB0F36: 15
     - Vector1_F9710B30: 0.01
     - _CameraOrthoSize: 4
-    - _DistortionSpeed: 0.2
+    - _DistortionSpeed: 2
+    - _DistortionSpeedX: 1.5
+    - _DistortionSpeedY: 1.5
+    - _DistortionStrength: 0.2
     - _MainCameraOrthoSize: 4
     - _Multiplier: -0.285
     - _ObjectPositionY: 0
+    - _ReflectionBlur: 0
+    - _SmoothstepEdgeMax: 1
+    - _SmoothstepEdgeMin: 0.05
+    - _WaveAmplitude: 0.01
+    - _WaveFrequency: 10
+    - _WaveSmoothing: 0.01
+    - _WaveSpeed: 2.5
     m_Colors:
     - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
-    - _DistortionTile: {r: 1, g: 1, b: 0, a: 0}
+    - _DistortionTile: {r: 5, g: 5, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _Tint: {r: 0.07058824, g: 0.8078431, b: 1, a: 1}

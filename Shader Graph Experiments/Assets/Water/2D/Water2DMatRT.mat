@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water2DMatRT
-  m_Shader: {fileID: -6465566751694194690, guid: e74352a8afa80b044a4aba366a043431,
+  m_Shader: {fileID: -6465566751694194690, guid: a9e39df00181dff42af9a34aee1bf430,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -43,14 +43,23 @@ Material:
     - _CameraOrthoSizeRenderTexture: 0
     - _CameraPositionY: 0
     - _DistortionSpeed: 1.5
+    - _DistortionStrength: 0.2
     - _MainCameraOrthoSize: 5
     - _Multiplier: -0.285
     - _ObjectPositionY: 0
     - _RTCameraOrthoSize: 10
+    - _ReflectionBlur: 2
+    - _SmoothstepEdgeMax: 1
+    - _SmoothstepEdgeMin: 0.05
+    - _WaveAmplitude: 0.0025
+    - _WaveFrequency: 10
+    - _WaveSmoothing: 0.001
+    - _WaveSpeed: 2.5
     m_Colors:
     - Vector2_27F24252: {r: 0, g: 0.25, b: 0, a: 0}
     - Vector2_5F12CB4E: {r: 0.25, g: 0, b: 0, a: 0}
     - Vector2_E13A64DE: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
+    - _DistortionTile: {r: 10, g: 10, b: 0, a: 0}
     - _Tiling: {r: 1, g: 0.5, b: 0, a: 0}
     - _Tint: {r: 0, g: 0.44152534, b: 0.5566038, a: 1}

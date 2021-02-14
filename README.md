@@ -55,9 +55,15 @@ Shader that uses \_CameraOpaqueTexture doesn't allow for the water to take up mo
 Since second camera covers larger portion of the screen it requires a different calculation of tiling and offset.
 
 Tiling.Y = MainCameraOrthographicSize/SecondaryCameraOrthographicSize
+
 Tiling.X = Tiling.Y * ScreenWidth/ScreenHeight
+
 Offset.Y = (ObjectPosition.Y - MainCameraPosition.Y)/SecondaryCameraOrthographicSize
+
 Offset.X = (1 - Tiling.X)/2
+
+IMPORTANT:
+When setting up your camera that renders to RT make it a child of the MainCamera and align it in a way where both MainCamera and Secondary camera have their bottom bound at the same position.
 
 ## Grass sway
 <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/GrassSway2D.png" height="256">
