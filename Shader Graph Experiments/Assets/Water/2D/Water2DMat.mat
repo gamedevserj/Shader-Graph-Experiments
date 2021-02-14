@@ -25,11 +25,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_8DCE2283: 1
+    - Vector1_DD781097: 25
     - _CameraOrthoSize: 4
-    - _DistortionSpeed: 0.1
+    - _DistortionSpeed: 0.2
     - _Multiplier: -0.285
     - _ObjectPositionY: 0
     m_Colors:
     - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
+    - _DistortionTile: {r: 1, g: 1, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _Tint: {r: 0.07058824, g: 0.8078431, b: 1, a: 1}
