@@ -8,19 +8,19 @@ The project contains various Shader Graph effects
 Some shaders use \_CameraOpaqueTexture. Sprite objects that use these shaders won't "interact" with shaders that have sprite lit/unlit master node. To avoid that you could either change master node to PBR and set rendering to opaque (example of that is a BackgroundMaterial in the project). Or create a second camera that renders to a texture and use that as a property instead of \_CameraOpaqueTexture.
 
 ## Texture dissolve 2D
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Dissolve2D.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Dissolve2D.png" height="256">
 
 Dissolves texture using alpha clip
 
 ## Sprite outline
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Outline2D.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments//Outline2D.png" height="256">
 
 Offsets sprite image in 4 directions to create outline
 
 ## Stealth cloak effect
 ### 2D and 3D
 #### Uses \_CameraOpaqueTexture
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/StealthCloak2D-WithOutline.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/StealthCloak3D.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/StealthCloak2D-WithOutline.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/StealthCloak3D.png" height="256">
 
 Uses \_CameraOpaqueTexture to imitate invisibility cloak effect.
 
@@ -37,7 +37,7 @@ Shadow needs to have another material that cuts out the model allowing for light
 
 ## Water reflection
 #### Uses \_CameraOpaqueTexture
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Water2D.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Water2D.png" height="256">
 
 Based on [this shader](https://www.reddit.com/r/Unity2D/comments/fcxjbu/i_always_wanted_to_create_water_reflection_shader/).
 
@@ -48,7 +48,7 @@ Here's how offset is calculated:
 Offset.Y = CameraPosition.Y * (-1/cameraOrthographicSize) + ObjectPosition.Y * (1/cameraOrthographicSize)
 
 ## Water reflection with objects off the screen
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Water2D-full-reflection.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Water2D-full-reflection2.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Water2D-full-reflection.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Water2D-full-reflection2.png" height="256">
 
 Shader that uses \_CameraOpaqueTexture doesn't allow for the water to take up more than half of the screen starting from the bottom or if its height of the portion on the screen is greater than its distance to the top of the screen. This variation allows for it to render objects that are outside of the screen. The render camera has to have orthographic size twice time greater than the camera that renders the scene. The camera that renders to texture covers twice as much space, so in order for reflections to be crispy as the original the render texture must be 2x the resolutions. This can get quite expensive on higher resolutions, so if you're using this make sure to allow player choose the quality of reflections.
 
@@ -66,13 +66,13 @@ IMPORTANT:
 When setting up your camera that renders to RT make it a child of the MainCamera and align it in a way where both MainCamera and Secondary camera have their bottom bound at the same position.
 
 ## Grass sway
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/GrassSway2D.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/GrassSway2D.png" height="256">
 
 A simple grass swaying shaders. The one that uses gradient causes some image distortion that can become very noticeable when amplitude it too high.
 
 ## Mirror effect
 #### Uses \_CameraOpaqueTexture
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-left.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-center.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-right.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Mirror2D-pivot-left.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-center.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-right.png" height="256">
 
 Mirror reflection effect. Reflection is based on the object's pivot point. in the examples above pivot points are as follows - left, center, right.
 Just like the water shader example scene uses script that adjusts material properties to reflect objects properly. If you have only one mirror in the scene you can replace _ObjectPositionX property with Object node and take X position from it.
@@ -83,12 +83,12 @@ Offset.X = ScreenHeight/ScreenWidth/CameraOrthographicSize * CameraPosition.X * 
 
 
 ## Resizeable shape
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/ResizeableShape.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/ResizeableShape.png" height="256">
 Shader that allows creation of a shape that preserves its width when changing size.
 
 ## Magnifying glass effect
 #### Uses \_CameraOpaqueTexture
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/MagnifyingGlass.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/MagnifyingGlass.png" height="256">
 
 The effect is implemented by modifying the tiling and offset values of the object. The script attached to the magnifying glass object adjusts values taking into account object position, camera position, camera orthographic size, and screen aspect ratio. 
 
@@ -107,6 +107,6 @@ Distortion strength around edges can be changed.
 ## Impact effect
 ### 2D and 3D
 #### Uses \_CameraOpaqueTexture
-<img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/ImpactEffect2D.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/ImpactEffect2D.png" height="256">
 
 Effect simulates shock wave that can be seen during explosions. The effect is basically radial distortion from the center of the object. Changing the alpha can be used to create a double vision that looks similar to the flashbang effect.
