@@ -20,7 +20,7 @@ Offsets sprite image in 4 directions to create outline
 ## Stealth cloak effect
 ### 2D and 3D
 #### Uses \_CameraOpaqueTexture
-<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/StealthCloak2D-WithOutline.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/StealthCloak3D.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/StealthCloak2D-WithOutline.png" height="256"> <img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/StealthCloak3D.png" height="256">
 
 Uses \_CameraOpaqueTexture to imitate invisibility cloak effect.
 
@@ -48,7 +48,7 @@ Here's how offset is calculated:
 Offset.Y = CameraPosition.Y * (-1/cameraOrthographicSize) + ObjectPosition.Y * (1/cameraOrthographicSize)
 
 ## Water reflection with objects off the screen
-<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Water2D-full-reflection.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Water2D-full-reflection2.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Water2D-full-reflection.png" height="256"> <img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Water2D-full-reflection2.png" height="256">
 
 Shader that uses \_CameraOpaqueTexture doesn't allow for the water to take up more than half of the screen starting from the bottom or if its height of the portion on the screen is greater than its distance to the top of the screen. This variation allows for it to render objects that are outside of the screen. The render camera has to have orthographic size twice time greater than the camera that renders the scene. The camera that renders to texture covers twice as much space, so in order for reflections to be crispy as the original the render texture must be 2x the resolutions. This can get quite expensive on higher resolutions, so if you're using this make sure to allow player choose the quality of reflections.
 
@@ -72,7 +72,7 @@ A simple grass swaying shaders. The one that uses gradient causes some image dis
 
 ## Mirror effect
 #### Uses \_CameraOpaqueTexture
-<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Mirror2D-pivot-left.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-center.png" height="256"> <img src="https://github.com/gamedevserj/Shader-Graph-Experiments/blob/master/Images/Mirror2D-pivot-right.png" height="256">
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Mirror2D-pivot-left.png" height="256"> <img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Mirror2D-pivot-center.png" height="256"> <img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Mirror2D-pivot-right.png" height="256">
 
 Mirror reflection effect. Reflection is based on the object's pivot point. in the examples above pivot points are as follows - left, center, right.
 Just like the water shader example scene uses script that adjusts material properties to reflect objects properly. If you have only one mirror in the scene you can replace _ObjectPositionX property with Object node and take X position from it.
