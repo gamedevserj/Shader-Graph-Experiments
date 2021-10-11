@@ -12,9 +12,9 @@ Instead, you need to use the __\_CameraSortingLayerTexture__ tag.
 
 The shaders can then be made to work as follows:
 
-    use _CameraSortingLayerTexture tag, remove the "Exposed" checkmark.
-    In the 2D renderer data, set the "Foremost Sorting Layer" to the last layer you want to be renderer with distortion.
-    Set the "Sorting Layer" of the sprite renderer which contains your distortion material to be above the last layer of the "foremost sorting layer".
+1. Use _CameraSortingLayerTexture tag, remove the "Exposed" checkmark.
+2. In the 2D renderer data, set the "Foremost Sorting Layer" to the last layer you want to be renderer with distortion.
+3. Set the "Sorting Layer" of the sprite renderer which contains your distortion material to be above the last layer of the "foremost sorting layer".
 
 
 ## Texture dissolve 2D
