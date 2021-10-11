@@ -5,7 +5,17 @@ Shader Graph v7.3.1
 
 The project contains various Shader Graph effects
 
-Some shaders use \_CameraOpaqueTexture. Sprite objects that use these shaders won't "interact" with shaders that have sprite lit/unlit master node. To avoid that you could either change master node to PBR and set rendering to opaque (example of that is a BackgroundMaterial in the project). Or create a second camera that renders to a texture and use that as a property instead of \_CameraOpaqueTexture.
+Some shaders use __\_CameraOpaqueTexture__. Sprite objects that use these shaders won't "interact" with shaders that have sprite lit/unlit master node. To avoid that you could either change master node to PBR and set rendering to opaque (example of that is a BackgroundMaterial in the project). Or create a second camera that renders to a texture and use that as a property instead of __\_CameraOpaqueTexture__.
+
+If you're using the 2D renderer pipeline, capturing the screen with __\_CameraOpaqueTexture__ does not work anymore in 2D.
+Instead, you need to use the __\_CameraSortingLayerTexture__ tag.
+
+The shaders can then be made to work as follows:
+
+    use _CameraSortingLayerTexture tag, remove the "Exposed" checkmark.
+    In the 2D renderer data, set the "Foremost Sorting Layer" to the last layer you want to be renderer with distortion.
+    Set the "Sorting Layer" of the sprite renderer which contains your distortion material to be above the last layer of the "foremost sorting layer".
+
 
 ## Texture dissolve 2D
 <img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/Dissolve2D.png" height="256">
