@@ -120,3 +120,8 @@ Distortion strength around edges can be changed.
 <img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/ShaderGrapExperiments/ImpactEffect2D.png" height="256">
 
 Effect simulates shock wave that can be seen during explosions. The effect is basically radial distortion from the center of the object. Changing the alpha can be used to create a double vision that looks similar to the flashbang effect.
+
+## Circular fade out
+<img src="https://raw.githubusercontent.com/gamedevserj/Images-For-Repo/main/Site/GodotFadeOutShaderTutorial/fade_out_final.gif" height="256">
+
+Fades out to any point of the screen.
