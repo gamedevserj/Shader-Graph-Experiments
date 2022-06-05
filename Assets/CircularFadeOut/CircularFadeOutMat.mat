@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CircularFadeOutMat
+  m_Shader: {fileID: -6465566751694194690, guid: 782e48f41aca7c94d83578bc295b6c25,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_9D84DE58:
+        m_Texture: {fileID: 2800000, guid: 205c1ba07e416c94eb55e0ef63279bdc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c4d7d6470acd7bf45971042161c6e018, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_18AEADA3_Out_0:
+        m_Texture: {fileID: 2800000, guid: d9dbf25506a9349499cc3b4a8481bdc8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_5D2EFD4B: 0
+    - Vector1_7B1AB4A7: -0.01
+    - Vector1_94D77747: 0.1
+    - _CameraOrthoSize: 4
+    - _DistortionSpeed: 0.1
+    - _FadeAmount: 0
+    - _FadeSmoothing: 0
+    - _Hypotenuse: 2.2282119
+    - _Multiplier: -0.285
+    - _ObjectPositionY: 0
+    - _OffsetX: 0.032
+    - _OffsetY: 0.05
+    - _Zoom: 0.1
+    m_Colors:
+    - Vector2_58DCD92E: {r: 0.9, g: 0.9, b: 0, a: 0}
+    - _DIstortionTile: {r: 2, g: 2, b: 0, a: 0}
+    - _Offset: {r: 1.822436, g: 1.2820513, b: 0, a: 0}
+    - _Tiling: {r: 1.6, g: 1, b: 0, a: 0}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}
